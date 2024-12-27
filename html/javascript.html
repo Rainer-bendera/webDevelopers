@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>my first JAVASCRIPT practice</p>
+</body>
+<script>
+//     console.log("rainer is ma name");
+//     var y = 7;
+//     var x = 5;
+//     var z;
+//     z = (x + y) * 2;
+//     console.log(z);
+
+//     let first_name = "isaya";
+//     let last_name = "bendera";
+//     let full_name = first_name+ " " +last_name;
+//     console.log(full_name);
+
+
+//     let person = {first_name:"rainer", last_name:"bendera", age:"30"}
+//     console.log(person.first_name);
+
+// function add(a,b){
+//     return a + b;
+// }
+
+// var result = add(5,5);
+// console.log(result);
+
+
+
+
+//    function multiply(a, b){
+//     return a * b;
+//    }
+
+//    var result = multiply(10,10);
+//    console.log(result);
+
+    // let first_name = "rainer";
+    // let last_name = "ben";
+
+    // if(first_name === "ra"){
+    //     console.log("hellow rainer");
+    // }
+    // else if(first_name === "alice"){
+    //     console.log("hellow alice");
+
+    // }
+    // else{
+    //     console.log("hellow somebody");
+    // }
+
+
+    let full_name = "rainer bendera";
+    if(full_name.includes("rainer") && full_name.includes("bendera")){
+        console.log("the full name contains first name and the second name");
+    }else{
+        console.log("full name incorrect");
+    }
+
+var x = 5;
+var y = 5;
+var z = "RAINER";
+console.log((x===z), (x===y));
+
+var color = ["red", "green", "black"]
+console.log(color[0]);
+
+var o1 = {first_name:"rainer", last_name:"bendera", age:300}
+console.log(typeof (o1));
+
+
+function rainer(a, b){
+    return a * b;
+}
+console.log(rainer(22, 22));
+
+
+var rainerr = {
+    first_name:"rainer", last_name:"bendera", id:2202, age:3000,
+    full_name: function(){
+        return this.first_name+ " "+this.last_name+ " "+this.age
+    }
+};
+console.log(rainerr.full_name());
+
+var x = "qqqqqweeeeertyuiopasdjklzxcvbnm";
+var sln = x.search("e");
+console.log(sln);
+
+
+var b = "fghjkkllkjjhjgh \" viki \"jjjjjjjjjjjj";
+console.log(b);
+
+
+var text1 = "hellow";
+var text2 = "world";
+var text3 = text2.concat(" ", text1);
+console.log(text3);
+
+var fruits, text;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(0, 0);
+console.log(fruits.join());
+
+var text4 = "simba";
+var text5 = "mnyama";
+var text6 = text4.concat(" ", text5);
+console.log(text6); 
+
+
+var boys = ["rainer", "john", "juma", "mjata", "msafiri"];
+var girls =["dian", "irene", "coletha"];
+var age = ["190", "77", "66", "4"," 2", "256", "17" ];
+var grandparents = ["issa", "abduli","marium"]
+var children = boys.concat(girls, grandparents);
+
+function funct1(){
+    age.sort(function(a, b){return b - a});
+    console.log(age.join());
+}
+console.log(funct1())
+
+function add(a, b){
+    return 5 * 10;
+}
+console.log(add());
+
+var st_name = "john";
+var nd_name = "doe";
+var ful_name = "john doe";
+
+// if(st_name === "john"  && nd_name === "doe"){
+//     console.log("Hellow john doe");
+// }
+// else 
+if(ful_name.includes("john") && ful_name.includes("doe")){
+    console.log("hellow john doe");
+}
+else{
+    console.log("who are you?");
+}
+
+if (true) {
+  var x = 10;
+  let y = 20;
+  console.log(y);
+}
+console.log(x);
+console.log(y);
+
+let n1 = "rainer";
+let n2 = "bennie";
+let n3 = `${n1} ${n2}`;
+console.log(n3);
+
+
+function add(a, b){
+    return a + b;
+}
+
+function subtraction(a, b){
+    return a - b;
+}
+
+function multiplication(a, b){
+    return a * b;
+}
+
+function division(a, b){
+    return a / b;
+}
+
+function calculate(a, b, operation){
+    return operation(a, b);
+}
+
+let resultadd = calculate(10, 5, add);
+let resultsubtraction = calculate(10, 5, subtraction);
+let resultmultiplication = calculate(10, 5, multiplication);
+let resultdivision = calculate(10, 5, division);
+
+console.log(resultadd);
+console.log(resultdivision);
+
+let resulti = 10 + 5 * 2 - 4 / 2;
+console.log(resulti);
+
+
+let add2 = (a, b) => {
+    var a =5;
+    var b = 6;
+        return a + b;
+}
+console.log(add2());
+
+var object1 = {
+    first_name: "Rainer",
+    last_name: "benn",
+    age:24
+};
+
+var newKey = "occupation";
+var newValue = "Ilboru";
+object1[newKey] = newValue;
+console.log(object1);
+
+
+var array5 = ["1000", "50", "20", "80", "01"];
+var array6 = ["TMA", "MBUNI", "malaika"]
+var array7 = array5.sort();
+// array5[0] = "geita";
+// array5[1] = "simbaoo";
+
+function funct2(){
+  array5.sort(function(a, b){return b - a});
+    console.log(array5);
+}
+console.log(funct2());
+
+
+var cars = [
+    {brand:"vorlks", year:2022},
+    {brand: "fuso", year:1900},
+    {brand:"youtong", year:1000},
+    {brand:"bajaji", year:2024}
+];
+console.log(
+    cars[0].brand + " "+ cars[0].year + "<br>",
+    cars[1].brand + " "+ cars[1].year + "<br>",
+    cars[2].brand + " "+ cars[2].year + "<br>",
+    cars[3].brand + " "+ cars[3].year + "<br>" 
+);
+</script>
+</html>

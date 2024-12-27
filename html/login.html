@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>killing point...</title>
+        <link rel="stylesheet" href="../css/syle.css">
+    </head>
+    <body style="background: url(images/banner-bg.png);">
+        <div class="container">
+            <div class="form-box">
+                <h1 id="title">Sign up</h1>
+                <form action="#">
+                    <div class="input-grp" id="namefield">
+                        <input type="text" placeholder="name">
+                    </div>
+
+                    <div class="input-grp">
+                        <input type="email" placeholder="email">
+                    </div>
+
+                    <div class="input-grp">
+                        <input type="password" placeholder="password">
+                    </div>
+                    <p>Lost password <a href="#">Click Here!</a></p>
+
+                    <div class="btn-grp">
+                        <button type="button" id="SignupBtn">Sign up</button>
+                        <button type="button" class="disable" id="SigninBtn">Sign in</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <script>
+            let title = document.getElementById("title");
+            let namefield = document.getElementById("namefield");
+            let SigninBtn = document.getElementById("SigninBtn");
+            let SignupBtn = document.getElementById("SignupBtn");
+
+            SigninBtn.onclick = function(){
+                title.innerHTML = "Sign in";
+                namefield.style.maxHeight = "0";
+                SignupBtn.classList.add("disable");
+                SigninBtn.classList.remove("disable");
+            }
+
+            SignupBtn.onclick = function(){
+                title.innerHTML = "Sign up";
+                namefield.style.maxHeight = "65px";
+                SignupBtn.classList.remove("disable");
+                SigninBtn.classList.add("disable");
+            }
+
+        </script>
+
+        
+    </body>
+</html>
+
+https://bootstrapmade.com/demo/Arsha/
