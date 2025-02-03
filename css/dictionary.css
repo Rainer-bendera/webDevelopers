@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    max-height: 100vh;
+}
+.container{
+    width: 100%;
+    max-width: 1350px;
+    padding: 20px;
+    margin: 50px auto;
+}
+.filter-button{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.filter-button button{
+    padding: 20px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 18px;
+    margin: 20px 0 35px 0;
+    font-size: 18px;
+    font-weight: 600;
+    background: #dcdcdc;
+}
+.card.hide{
+    display: none;
+}
+button.active{
+    background: darkblue;
+    color: #fff;
+}
+
+.filter-cards{
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 20px;
+}
+.card{
+    flex-grow: 1;
+    flex-basis: 300px;
+    background: #dcdcdc;
+    padding: 30px;
+    border-radius: 8px 8px 8px 8px;
+    margin: 10px 0;
+    transition: 1s;
+}
+
+.card:hover{
+    margin: 10px 0;
+    transform: scale(1.1);
+}
+
+.card img{
+    margin-left:10px ;
+    border-radius: 8px 8px 0 0;
+    width: 90%;
+    height: 210px;
+}
+.title{
+    margin: 15px 0 20px 10px;
+    font-weight: 650;
+}
+.text{
+    margin: 15px 0 15px 10px;
+    font-weight: 650;
+}
+.order{
+    text-align: center;
+    justify-content: space-between;
+    background: red;
+    width: 100%;
+    
+}
+.order button{
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 10px 20px;
+    background: white;
+    border: 1;
+    outline: none;
+    cursor: pointer;
+    border-radius: 18px;
+    color: #000;
+    
+}
+
+.order button:nth-child(1){
+    float: left;
+    /* margin-left: 35px; */
+    width: 40%;
+}
+
+.order button:nth-child(2){
+    float: right;
+    /* margin-right: 35px; */
+    width: 40%;
+}
+
+.order button:hover{
+    background: darkblue;
+    color: #fff;
+    transition: 1s;
+    border: none;
+}

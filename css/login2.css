@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: #4070f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+.form{
+    flex-wrap: wrap;
+    position: absolute;
+    background: #fff;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 430px;
+    padding: 30px;
+}
+
+.form.signup{
+    opacity: 0;
+    transition: 1s;
+    pointer-events: none;
+}
+.forms.show-signup .form.signup{
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1s;
+}
+
+header{
+    font-size: 28px;
+    font-weight: 600;
+    color: #232836;
+    text-align: center;
+}
+form{
+    margin-top: 30px;
+}
+
+.form .field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+.eye-icon{
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #8b8b8b;
+    cursor: pointer;
+    padding: 5px;
+
+}
+
+i.fa-facebook{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+.field input, .field button{
+    height: 100%;
+    border: none;
+    width: 100%;
+    font-size: 16PX;
+    font-weight: 400;
+    border-radius: 6px;
+}
+.field button{
+    background-color: #0171d3;
+    color: #fff;
+}
+
+.field button:hover{
+    background-color: #016dcb;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.field input{
+    outline: none;
+    border: 1px solid #CACACA;
+    padding: 0 15PX;
+}
+
+.field button:focus{
+    border-bottom-width: 2px;
+}
+
+.form-link{
+    margin-top: 20PX;
+    text-align: center;
+}
+
+.form-link span,
+.form-link a{
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+form a{
+    color: #0171d3;
+    text-decoration: none;
+}
+form a:hover{
+    text-decoration: underline;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    position: relative;
+    background-color: #d4d4d4;
+    margin: 40px 0;
+
+}
+.line::before{
+    content: 'or';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    color: #232836;
+    padding: 0 15px;
+    
+    
+}
+
+
+
+.media-option a{
+    display: flex;
+    background-color: #4267b2;
+    margin-top: 15px;
+    /* padding: 18px 30px 10px 120px; */
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.media-option a:hover{
+    text-decoration: underline;
+}
+
+img.google-img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+   
+}
+.google img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+
+
+a.google{
+    border: 1px solid #CACACA;
+    background: transparent;
+    color: #016dcb;
+}
+
+@media screen and (max-width: 400px) {
+    .form{
+        padding: 15px 10px;
+    }
+}
