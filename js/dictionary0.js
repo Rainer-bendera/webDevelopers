@@ -17,4 +17,4 @@ const filterCard = f =>{
     })
 }
 
-filterButton.forEach(button => addEventListener("click", filterCard));
+filterButton.forEach(button => button.addEventListener("click", filterCard));
