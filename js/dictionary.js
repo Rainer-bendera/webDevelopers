@@ -20,3 +20,7 @@ const filterCards = f =>{
 };
 
 filterButtons.forEach(button => button.addEventListener("click",filterCards));
+
+let view = document.querySelector("view");
+let call = document.getElementById("call");
+

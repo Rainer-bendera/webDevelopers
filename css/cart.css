@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: #ff7979;
+}
+.wrapper .card{
+    position: relative;
+}
+.wrapper .card .content{
+    position: absolute;
+    width: 90%;
+    background: #fff;
+    bottom: -50%;
+    padding: 10px 20px 22px 20px;
+}
+.wrapper{
+    display: flex;
+    gap: 60px;
+    padding: 60px;
+    align-items: center;
+    justify-content: center;
+
+}
+.card{
+    background: #dcdcdc;
+    width: 20%;
+    height: auto;
+    padding: 20px;
+    /* text-align: center; */
+    overflow: hidden;
+    
+
+}
+
+.wrapper .card:hover .content{
+    bottom: 10px;
+    transition: 0.5s ;
+}
+
+img{
+    width: 250px ;
+    height: 250px;
+    border-radius: 4px;
+    
+}
+.wrapper .card .content{
+    position: absolute;
+    padding: 10px 20px 22px 10px;
+}
+
+/* .card .content .row{
+    display: flex;
+    justify-content: space-between;
+} */
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+.details .price{
+    margin: 20px 0px 20px 0px;
+    font-size: 25pxs;
+    font-weight: 600;
+    color: #ff7979;
+  
+}
+.content .details .describe{
+    margin: 20px 0px 10px 0px;
+    
+}
+.details .describe span{
+    font-size: 22px;
+    font-weight: 600;
+}
+.details .describe p{
+    margin: 10px 0 15px 0px;
+    font-size: 20px;
+
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    flex-basis: 48%;
+    width: 100%;
+    height: 5vh;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid #ff7979;
+}
+
+.buttons button:first-child{
+    color: #ff7979;
+}
+
+.buttons button:first-child:hover{
+    color: #000;
+    background: #ff7979;
+    transition: all 0.5s ease-in-out;
+    border-radius: 12px;
+}
+.buttons button:last-child{
+    background: #ff7979;
+    color: #000;
+   
+}
+
+.buttons button:last-child:hover{
+    border-radius: 12px;
+    transition: all 0.5s ease-in-out;
+    
+
+}
