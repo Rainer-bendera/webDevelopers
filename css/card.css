@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top left, #031a9a, #bb53ff);
+    min-height: 100vh;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1070px;
+    position: relative;
+}
+
+.arrows{
+    position: absolute;
+    background: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rArrow{
+    background-size: cover;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 21px;
+    user-select: none;
+}
+.lArrow{
+    background-size: cover;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 21px;
+    user-select: none;
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+.cards:where(.card, .image){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    scroll-snap-align: start;
+    background: #dcdcdc;
+    padding: 90px;
+    scrollbar-width: 1;
+
+}
+.card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+}
+.cards.dragging .card{
+    user-select: none;
+    cursor: grab;
+}
+
+.cards.dragging{
+    scroll-behavior: smooth;
+}
+
+.image{
+    background: #bb53ff;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

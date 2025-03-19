@@ -1,0 +1,229 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+
+
+*{
+    font-family: 'poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white-color:#fff;
+    --dark-color:#252525;
+    --primary-color:#3b141c;
+    --secondary-color:#f3961c;
+    --light-pink-color:#faf4f5;
+    --medium-gray-color:#ccc;
+}
+
+header{
+    position: fixed;
+    z-index:5 ;
+    width: 100%;
+    background: var(--primary-color);
+    
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img{
+    width: 100%;
+}
+
+header .navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.navMenu{
+    display: flex;
+    gap: 10px;
+}
+
+.navBar .navLogo .logoText{
+    color: #fff;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 85%;
+    
+}
+
+.navBar .navMenu .navLink{
+    color: #fff;
+    padding: 10px 18px;
+    transition: 0.5s;
+    border-radius: 40px;
+    font-size: 20px;
+}
+
+.navBar .navMenu .navLink:hover{
+    background: rgb(241, 158, 5);
+    color: #fff;
+}
+
+.navBar :where(#closeMenu, #openMenu){
+    display: none;
+}
+
+.hero{
+    background: var(--primary-color);
+    min-height: 100vh;
+    
+}
+.heroImage{
+    margin-right: 40px;
+    
+}
+img{
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 70vh;
+    background: var(--primary-color);
+   user-select: none;
+    
+}
+.sectionContent {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.heroDetails{
+    margin-left: 100px;
+}
+
+.heroDetails .title{
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--secondary-color);
+    font-family: 'miniver', sans-serif;
+}
+
+.heroDetails .subtitle{
+    font-size: 20px;
+    margin-top: 8px ;
+    max-width: 70%;
+    font-weight: 700;
+}
+
+.heroDetails .description{
+    margin: 24px 0 40px;
+    max-width: 70%;
+    font-size: 22px;
+}
+
+.buttons a:hover{
+   color: var(--white-color);
+   border-color: var(--white-color);
+   background: transparent;
+}
+
+.buttons a:last-child{
+    color: var(--white-color);
+    border-color: var(--white-color);
+    background: transparent;
+ }
+
+ .buttons a:last-child:hover{
+    color: var(--primary-color);
+    border: none;
+    background: var(--secondary-color);
+ }
+
+ .buttons .buttonOrder, .buttonContact{
+    background: var(--secondary-color);
+    padding: 10px 26px;
+    color: var(--primary-color);
+    border-radius: 40px;
+    font-family: 600;
+    margin-right: 20px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.4s ease;
+}
+
+@media screen and (max-width:900px) {
+
+    body.show-mobile-menu header::before{
+        content: '';
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+
+    .navBar .navMenu{
+        display: block;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px;
+        width: 300px ;
+        height: 100%;
+        background: var(--white-color);
+        transition: left 0.2s ease;
+    }
+
+    body.show-mobile-menu .navBar .navMenu{
+        left: 0;
+    }
+
+    .navBar :where(#closeMenu, #openMenu){
+        font-size: 21px;
+        display: block;
+    }
+
+    .navBar #closeMenu{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .navBar #openMenu{
+        color: var(--white-color);
+        
+    }
+
+    .navBar .navMenu .navLink{
+        color: var(--dark-color);
+        font-size: 21px;
+        margin: 15px;
+        display: block;
+        
+    }
+}
+
+
+
