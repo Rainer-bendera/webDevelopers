@@ -123,11 +123,12 @@ img{
     font-family: 'miniver', sans-serif;
 }
 
-.heroDetails .subtitle{
+.heroDetails .subtitle h3{
     font-size: 20px;
     margin-top: 8px ;
     max-width: 70%;
     font-weight: 700;
+    text-align: center;
 }
 
 .heroDetails .description{
@@ -203,16 +204,20 @@ img{
     .navBar :where(#closeMenu, #openMenu){
         font-size: 21px;
         display: block;
+        
     }
 
     .navBar #closeMenu{
         position: absolute;
         right: 30px;
         top: 30px;
+        flex-grow: 1;
     }
 
     .navBar #openMenu{
         color: var(--white-color);
+        flex-wrap: wrap;
+        margin-left: 150px;
         
     }
 
@@ -223,7 +228,120 @@ img{
         display: block;
         
     }
+
+    .hero .sectionContent{
+        gap: 50px ;
+        text-align: center;
+        padding: 30px 20px 20px;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .sectionContent .heroImage img{
+        max-width: 270px;
+        max-height: 270px;
+        margin-left: 150px;
+    }
+
+    .hero .heroDetails :is(.title, .description), .aboutSection .aboutDetails{
+        max-width: 100%;
+
+    }
+
+    .hero .heroDetails .buttons {
+        text-align: center;
+    }
+
+
+    .sectionContent{
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .aboutSection .sectionContent{
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .aboutSection .aboutImage{
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        /* max-width: 250px; */
+        aspect-ratio: 1;
+    }
+}
+/* About section styling */
+
+.aboutSection{
+    background: var(--light-pink-color);
+    padding: 50px 0;
+    min-width: 50%;
 }
 
+.aboutSection .aboutDetails .text{
+    line-height: 30px;
+    margin: 50px 30px 30px 30px;
+    text-align: center;
+    font: 21px;
+}
+
+
+
+.aboutSection .aboutDetails .sectionTitle{
+    padding: 0;
+}
+
+.aboutSection .aboutDetails .socialLinks{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.aboutDetails{
+    color: var(--dark-color);
+}
+
+.aboutSection .aboutDetails .socialLink{
+    color: var(--primary-color);
+    font-size: 25px;
+}
+
+.aboutSection .aboutDetails .socialLink:hover{
+    color: var(--secondary-color);
+}
+
+.sectionContent{
+    gap: 20px;
+    display: flex;
+    
+}
+
+.aboutSection .aboutImageWrapper .aboutImage{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 70px;
+}
+
+.sectionTitle{
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 900;
+}
+
+.sectionTitle::after{
+    content: '';
+    height: 4px;
+    width: 80px;
+    display: block;
+    margin: 10px auto 0;
+    background: var(--secondary-color);
+    border-radius: 4px;
+}
 
 
