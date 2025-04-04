@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive coffee website</title>
-    <script src="../js/responsive_website.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/responsive_website.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
@@ -12,11 +13,12 @@
     <!-- header section -->
     <header>
         <nav class="navBar content">
-            <a href="#" class="navLogo">
+            
                 <h2 class="logoText">☕ Coffee</h2>
             </a>
             
             <ul class="navMenu">
+                
                 <button id="closeMenu" class="closeTime">❌</button>
                 <li class="navItem">
                     <a href="#" class="navLink">Home</a>
@@ -46,8 +48,9 @@
             <button id="openMenu" class="openTime"><i class="fa-solid fa-bars"></i></button>
         </nav>
     </header>
-    <!-- hero section -->
+    
     <main>
+        <!-- hero section -->
         <section class="hero">
             <div class="sectionContent">
                 <div class="heroDetails">
@@ -98,6 +101,198 @@
                 </div>
             </div>
         </section>
+
+        <!-- menu section -->
+        <section class="menu_section">
+            <h2 class="sectionTitle">Our menu</h2>
+            <div class="section_content">
+                <ul class="menu_list">
+                    <li class="menu_item">
+                        <img src="../images/c1.jpg" alt="hot beverage" class="menu_image">
+                        <h3 class="name">Hot Beverage</h3>
+                        <p class="text">Wide range of streaming hot coffee to make you fresh and right</p>
+                    </li>
+
+                    <li class="menu_item">
+                        <img src="../images/c01.jpg" alt="cold beverage" class="menu_image">
+                        <h3 class="name">Cold Beverage</h3>
+                        <p class="text">Creamy and frothy cold coffee to make you cool</p>
+                    </li>
+
+                    <li class="menu_item">
+                        <img src="../images/c02.jpg" alt="hot beverage" class="menu_image">
+                        <h3 class="name">Hot Beverage</h3>
+                        <p class="text">Wide range of streaming hot coffee to make you fresh and right</p>
+                    </li>
+
+                    <li class="menu_item">
+                        <img src="../images/c4.jpg" alt="refreshment" class="menu_image">
+                        <h3 class="name">Refreshment</h3>
+                        <p class="text">Fruit and icy refreshing drink to make you feel refresh</p>
+                    </li>
+
+
+                    <li class="menu_item">
+                        <img src="../images/c2.jpg" alt="special combo" class="menu_image">
+                        <h3 class="name">Special Combos</h3>
+                        <p class="text">Your favourite eating and drinking combination</p>
+                    </li>
+
+
+                    <li class="menu_item">
+                        <img src="../images/c04.jpg" alt="desert" class="menu_image">
+                        <h3 class="name">Desert</h3>
+                        <p class="text">Satiate your palate and take you on a culinary treat</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- testimoial secion -->
+        <section class="testmonials-section">
+            <h2 class="sectionTitle">Testimonials</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonial swiper-slide" >
+                                <img src="../images/wo1.jpg" alt="User" class="user-image">
+                                <h3 class="name">Mike Tyson</h3>
+                                <i class="feedback">"Loved the french roast. Perfectly 
+                                    balance and rich. Will order again"</i>
+                            </li>
+
+
+                            <li class="testimonial swiper-slide" >
+                                <img src="../images/worker1.jpg" alt="User" class="user-image">
+                                <h3 class="name">Michael Brown</h3>
+                                <i class="feedback">"Loved the french roast. Perfectly 
+                                    balance and rich. Will order again"</i>
+                            </li>
+
+                            <li class="testimonial swiper-slide" >
+                                <img src="../images/worker2.jpg" alt="User" class="user-image">
+                                <h3 class="name">Johnson Caamil</h3>
+                                <i class="feedback">"Loved the french roast. Perfectly 
+                                    balance and rich. Will order again"</i>
+                            </li>
+
+                            <li class="testimonial swiper-slide" >
+                                <img src="../images/worker3.jpg" alt="User" class="user-image">
+                                <h3 class="name">Harvet Kai</h3>
+                                <i class="feedback">"Loved the french roast. Perfectly 
+                                    balance and rich. Will order again"</i>
+                            </li>
+
+
+                            <li class="testimonial swiper-slide" >
+                                <img src="../images/worker4.jpg" alt="User" class="user-image">
+                                <h3 class="name">William MacDonald</h3>
+                                <i class="feedback">"Loved the french roast. Perfectly 
+                                    balance and rich. Will order again"</i>
+                            </li>
+
+
+                            <li class="testimonial swiper-slide" >
+                                <img src="../images/wo7.jpeg" alt="User" class="user-image">
+                                <h3 class="name">Sarah Jackson</h3>
+                                <i class="feedback">"Loved the french roast. Perfectly 
+                                    balance and rich. Will order again"</i>
+                            </li>
+                        </ul>
+
+                        <div class=" swiper-pagination"></div>
+                        <div class="swipper-slide-button swiper-button-prev"></div>
+                        <div class="swipper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- gallery-section -->
+        <section class="gallery-section">
+            <h2 class="sectionTitle">Gallery</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="../images/c44.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+
+                    <li class="gallery-item">
+                        <img src="../images/c1.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    
+                    <li class="gallery-item">
+                        <img src="../images/c2.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    
+                    <li class="gallery-item">
+                        <img src="../images/c3.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    
+                    <li class="gallery-item">
+                        <img src="../images/c4.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                    
+                    <li class="gallery-item">
+                        <img src="../images/c5.jpg" alt="Gallery" class="gallery-image">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- seection contact us -->
+        <section class="contact-section">
+            <h2 class="sectionTitle">Contact Us</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>123 Campsite Avenue, Wilderness, CA 9876</p>
+                    </li>
+
+                    <li class="contact-info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>info@coffeeshopwebsite.com</p>
+                    </li>
+
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(123) 213 - 9876</p>
+                    </li>
+
+                    <li class="contact-info">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    </li>
+
+                    <li class="contact-info">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Saturday: 10:00 AM - 3:00 PM</p>
+                    </li>
+
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>@rainer_benn</p>
+                    </li>
+                </ul>
+
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Your name" class="form-input" required>
+                    <input type="email" placeholder="Your email" class="form-input" required>
+                    <br>
+                    <textarea class="form-input" placeholder="Your Message" required></textarea>
+                    <button class="submit-button">Submit</button>
+                </form>
+            </div>
+        </section>
     </main>
+
+
+<!-- linking swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- linking custom script -->
+    <script src="../js/responsive_website.js"></script>
 </body>
 </html>
