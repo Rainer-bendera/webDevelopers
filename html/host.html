@@ -26,19 +26,19 @@
                 </li>
 
                 <li class="nav_item">
-                    <a href="#" class="nav_link">About</a>
+                    <a href="#about" class="nav_link">About</a>
                 </li>
 
                 <li class="nav_item">
-                    <a href="#" class="nav_link">Skills</a>
+                    <a href="#skills" class="nav_link">Skills</a>
                 </li>
 
                 <li class="nav_item">
-                    <a href="#" class="nav_link">Work</a>
+                    <a href="#work" class="nav_link">Work</a>
                 </li>
 
                 <li class="nav_item">
-                    <a href="#" class="nav_link">Contact</a>
+                    <a href="#contact" class="nav_link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -52,20 +52,22 @@
     <main class="l_main">
 
         <!-- home section -->
-        <section class="home bd-grid" id="home">
+        <section class="home bd-grid">
             <div class="home_data">
                 <h1 class="home_title">Hi, <br> I'am <span class="home_title_color">Rainer</span><br> Web Designer</h1>
                 <a href="#" class="button">Contact</a>
             </div>
 
-            <div class="home_social">
-                <a href="#" class="home_social_icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="#" class="home_social_icon"><i class='bx bxl-behance'></i></a>
-                <a href="#" class="home_social_icon"><i class='bx bxl-github'></i></a>
-            </div>
-
-            <div class="home_img">
-                <img src="../images/worker1.jpg" alt="">
+            <div class="homeSocial">
+                <div class="home_social">
+                    <a href="#" class="home_social_icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#" class="home_social_icon"><i class='bx bxl-behance'></i></a>
+                    <a href="#" class="home_social_icon"><i class='bx bxl-github'></i></a>
+                </div>
+    
+                <div class="home_img">
+                    <img src="../images/worker1.jpg" alt="">
+                </div>
             </div>
         </section>
 
@@ -87,6 +89,133 @@
             </div>
 
         </section>
+
+        <!-- skills section -->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills_container bd-grid">
+                <div>
+                    <h2 class="skills_subtitle">Profesinal Skills</h2>
+                    <p class="skills_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Quisquam iure aspernatur praesentium delectus, nulla amet quis aliquid quas
+                        </p> 
+                </div>
+
+                <div class="skills_data">
+                    <div class="skills_names">
+                        <i class="bx bxl-html5 skills_icon"></i>
+                        <span class="skills_name">HTML5</span>
+                    </div>
+                    <div>
+                        <span class="skills_percentage">95%</span>
+                    </div>
+
+                    <div class="skills_bar skills_html"></div>
+
+                </div>
+
+                <div class="skills_data">
+                    <div class="skills_names">
+                        <i class="bx bxl-css3 skills_icon"></i>
+                        <span class="skills_name">CSS3</span>
+                    </div>
+                    <div>
+                        <span class="skills_percentage">85%</span>
+                    </div>
+
+                    <div class="skills_bar skills_css"></div>
+
+                </div>
+
+                <div class="skills_data">
+                    <div class="skills_names">
+                        <i class="bx bxl-javascript skills_icon"></i>
+                        <span class="skills_name">JAVASCRIPT</span>
+                    </div>
+                    <div>
+                        <span class="skills_percentage">65%</span>
+                    </div>
+
+                    <div class="skills_bar skills_js"></div>
+
+                </div>
+
+                <div class="skills_data">
+                    <div class="skills_names">
+                        <i class="bx bxs-paint skills_icon"></i>
+                        <span class="skills_name">UX/UI</span>
+                    </div>
+                    <div>
+                        <span class="skills_percentage">85%</span>
+                    </div>
+
+                    <div class="skills_bar skills_ux"></div>
+
+                </div>
+                    <div class="skills-image">
+                        <img src="../images/computer-img.png" alt="skills image">
+                    </div>
+            </div>
+        </section>
+
+        <!-- work -->
+        <section class="work section" id="work">
+            <h2 class="section-title">Work</h2>
+
+            <div class="work_container bd-grid">
+                <div class="work_img">
+                    <img src="../images/worker1.jpg" alt="" class="workImg">
+                </div>
+
+                <div class="work_img">
+                    <img src="../images/worker2.jpg" alt="" class="workImg">
+                </div>
+
+                <div class="work_img">
+                    <img src="../images/worker3.jpg" alt="" class="workImg">
+                </div>
+
+                <div class="work_img">
+                    <img src="../images/worker4.jpg" alt="" class="workImg">
+                </div>
+
+                <div class="work_img">
+                    <img src="../images/worker1.jpg" alt="" class="workImg">
+                </div>
+
+                <div class="work_img">
+                    <img src="../images/worker2.jpg" alt="" class="workImg">
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact_container bd-grid">
+                <form action="#" class="contact_form">
+                    <input type="text" placeholder="Name" class="contact_input">
+                    <input type="email" placeholder="Email" class="contact_input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact_input"></textarea>
+
+                    <input type="button" value="Enviar" class="contact_button button">
+                </form>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <p class="footer_title">Rainer</p>
+
+            <div class="footer_social">
+                <a href="#" class="footer_icon"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="footer_icon"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="footer_icon"><i class="bx bxl-twitter"></i></a>
+            </div>
+            <p>&#169; 2025 copyright all right reserved</p>
+        </footer>
 
 
 

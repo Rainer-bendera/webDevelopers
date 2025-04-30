@@ -7,7 +7,6 @@ console.log(filterButtons, filterableCards);
 const filterCards = f =>{
     document.querySelector(".active").classList.remove("active")
     f.target.classList.add("active");
-    console.log(f.target);
 
     // iterate over each filterable cards
     filterableCards.forEach(card => {
