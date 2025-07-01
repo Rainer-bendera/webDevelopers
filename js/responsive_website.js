@@ -1,6 +1,24 @@
 const navLinks = document.querySelectorAll(".navMenu .navLink");
 const menuOpen = document.querySelector(".openTime");
 const menuClose = document.querySelector(".closeTime");
+const selectedButton = document.querySelectorAll(".navMenu .navLink");
+const body = document.querySelector("body");
+
+// active button when clicked
+
+const clickedButton = f =>{
+  document.querySelector(".active").classList.remove("active");
+  f.target.classList.add("active");
+  saveData();
+}
+
+ 
+
+selectedButton.forEach(btn => {
+  btn.addEventListener("click", clickedButton);
+  
+})
+
 
 
 menuOpen.addEventListener("click" , ()=>{
@@ -52,4 +70,30 @@ const swiper = new Swiper('.slider-wrapper', {
     }
   });
 
+
+  // scroll reveal
+  const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2050,
+    reset: true
+  })
+
+  // scroll hero
+  sr.reveal('.heroDetails',{})
+  sr.reveal('.heroImage',{})
+  sr.reveal('.buttons',{delay: 400})
+
+  sr.reveal('.slider-wrapper', {})
+
+
+
+function saveData(){
+  localStorage.setItem("data", body.innerHTML);
+}
+
+function showData(){
+  body.innerHTML = localStorage.getItem("data")
+}
+ 
 

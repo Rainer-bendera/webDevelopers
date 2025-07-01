@@ -6,3 +6,14 @@ const selButton = f =>{
     console.log(f.target);
 }
 selectButton.forEach(button => button.addEventListener("click", selButton));
+
+
+// scrollReval
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+})
+
+sr.reveal('.text', {})

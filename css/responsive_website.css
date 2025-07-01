@@ -73,6 +73,10 @@ header .navBar{
     
 }
 
+.navBar .navMenu .active{
+    background: var(--secondary-color);
+}
+
 .navBar .navMenu .navLink{
     color: #fff;
     padding: 10px 18px;
@@ -106,8 +110,41 @@ img{
     height: 70vh;
     background: var(--primary-color);
    user-select: none;
+   
     
 }
+
+
+
+.heroImage img{
+    margin: 20px 0;
+    animation: up-down;
+    animation-duration: 4s;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+   
+}
+
+@keyframes up-down{
+    0%{
+        transform: translateY(0px);
+
+    }
+
+    50%{
+        transform: translateY(15px);
+        
+    }
+
+    0%{
+        transform: translateY(0px);
+        
+    }
+}
+
+
+
+
 .sectionContent {
     display: flex;
     align-items: center;

@@ -27,6 +27,11 @@
         --h2-font-size: 2rem;
         --normal-font-size: 1rem;
     }  
+
+    .nav_toggle{
+        display: flex;
+    }
+
 }
 
 /* margines */
@@ -518,6 +523,48 @@ img{
         padding-bottom: 2.5rem;
         flex-direction: row;
         align-self: flex-end;
+    }
+
+    .home_social_icon{
+        margin-bottom: 0;
+        margin-right: var(--mb-4);
+    }
+
+    .home_img{
+        width: 457px;
+        bottom: 15%;
+    }
+
+    .about_container{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        text-align: initial;
+    }
+
+    .about_img img{
+        width: 300px;
+    }
+
+    .work_container{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+
+    .contact_form{
+        width: 460px;
+    }
+
+    .contact_container{
+        justify-items: center;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .bg-grid{
+        margin-left: auto;
+        margin-right: auto;
     }
     
 }
