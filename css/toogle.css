@@ -32,7 +32,7 @@ body.dark{
     content: '';
     width: 100px;
     height: 100px;
-    top: 17px;
+    top: 15px;
     right: 47%;
     transform: translate(-50%);
     background: #4070f4;
@@ -44,3 +44,12 @@ body.dark{
     transition: 1s;
     background: #18191a;
 }
+
+.toogle.white{
+    background: #000;
+}
+
+.toogle.white::before{
+    border: 2px solid #fff;
+}
+

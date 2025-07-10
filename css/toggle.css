@@ -25,12 +25,12 @@
 
 }
 
-body.aqua{
-    background:rgb(91, 142, 142) ;
+body.dark{
+    background:black ;
     transition: all 0.3s ease-in-out;
 }
-.wrapper.aqua{
-    background:rgb(91, 142, 142) ;
+.wrapper.dark{
+    background:black ;
     transition: all 0.3s ease-in-out;
     border: 2px solid #597c0c;
 }
