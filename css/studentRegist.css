@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+#container{
+    text-align: center;
+    padding: 25px 250px;
+    width: 100%;
+    height: 50vh;
+}
+
+.students{
+    /* padding: 25px 250px; */
+    text-align: center;
+    height: auto;
+    width: 50%;
+    margin-top: 10px;
+    background: #ede8e8;
+    margin-left: 270px;
+    border: 1px solid #708090;
+
+}
+
+.sName, .rollAge{
+    padding: 10px 250px;
+
+}
+.sName input{
+    width: 97%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #fa8072;
+    margin: 0 10px 0 10px;
+}
+
+.rollAge{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.rollAge #age, #roll{
+     width: 53%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #fa8072;
+}
+
+button{
+    width: 53%;
+    background: #000fff;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #faebd7;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+ 
+.students h2{
+    margin-top: 12px;
+}

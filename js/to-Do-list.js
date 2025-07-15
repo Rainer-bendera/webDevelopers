@@ -49,7 +49,6 @@ function createTaskElement(task){
 
 
 function saveTasks(){
-
     let tasks = [];
     taskList.querySelectorAll("li").forEach(function(item){
         tasks.push(item.textContent.replace('Delete', ' ').trim());
