@@ -5,15 +5,18 @@ const nameInput = container['name'];
 const ageInput = container['age'];
 const rollInput = container['roll'];
 
-const student =[];
+
+
+const student =JSON.parse(localStorage.getItem("students")) || [];
 
 const addStudent = (name, age, roll) =>{
     student.push({
         name: name,
         age: age,
-        roll: roll
+        roll: roll,
     })
 
+    localStorage.setItem("students", JSON.stringify(student));
     return {name, age, roll}
 };
 
@@ -29,7 +32,10 @@ const createStudentElement = ({name, age, roll}) =>{
 
     studentDiv.append(studentName, studentAge, studentRoll);
     students.appendChild(studentDiv);
+    students.style.display = student.length === 0 ? "none" : "flex"
 };
+    students.style.display = student.length === 0 ? "none" : "flex"
+
 
 student.forEach(createStudentElement);
 
@@ -49,3 +55,6 @@ container.onsubmit = (e) => {
     rollInput.value = "";
 
 };
+
+
+
