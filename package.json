@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Rainer-bendera/webDevelopers/issues"
   },
-  "homepage": "https://github.com/Rainer-bendera/webDevelopers#readme"
+  "homepage": "https://github.com/Rainer-bendera/webDevelopers#readme",
+  "dependencies": {
+    "scrollreveal": "^4.0.9"
+  }
 }

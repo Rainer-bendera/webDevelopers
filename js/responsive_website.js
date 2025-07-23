@@ -1,3 +1,4 @@
+ScrollReveal().reveal('.headline');
 const navLinks = document.querySelectorAll(".navMenu .navLink");
 const menuOpen = document.querySelector(".openTime");
 const menuClose = document.querySelector(".closeTime");
