@@ -20,6 +20,9 @@ selectedButton.forEach(btn => {
   
 })
 
+const hostname = '127.0.0.1';
+const port = 3000;
+
 
 
 menuOpen.addEventListener("click" , ()=>{
