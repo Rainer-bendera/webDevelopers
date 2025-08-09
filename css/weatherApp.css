@@ -70,8 +70,8 @@ body{
 }
 
 .details .humidityy, .windd{
-    width: 13vw;
-    height: 13vw;
+    width: 50px;
+    height: 50px;
     margin-bottom: 12px;
     margin-right: 5px;
 }
@@ -89,6 +89,12 @@ body{
     align-items: center;
     justify-content: left;
     margin-left: 10px;
+    
+}
+
+.col img{
+    width: 50px;
+    height: 50px;
 }
 
 .humidity, .wind{
