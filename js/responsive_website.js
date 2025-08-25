@@ -76,28 +76,15 @@ const swiper = new Swiper('.slider-wrapper', {
 
 
   // scroll reveal
-  const sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 2050,
-    reset: true
-  })
+const sr = ScrollReveal({
+  origin:'top',
+  distance:'80px',
+  duration:2050,
+  reset:true
+});
 
-  // scroll hero
-  sr.reveal('.heroDetails',{})
-  sr.reveal('.heroImage',{})
-  sr.reveal('.buttons',{delay: 400})
-
-  sr.reveal('.slider-wrapper', {})
+sr.reveal(".buttons", {delay:400});
 
 
-
-function saveData(){
-  localStorage.setItem("data", body.innerHTML);
-}
-
-function showData(){
-  body.innerHTML = localStorage.getItem("data")
-}
  
 
