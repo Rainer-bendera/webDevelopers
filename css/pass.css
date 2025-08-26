@@ -34,6 +34,21 @@ body{
     border: none;
     border-radius: 12px;
     font-size: 21px;
+    position: relative;
+}
+
+.inputField{
+    position: relative;
+}
+
+.inputField i{
+    top: 44.5px;
+    position: absolute;
+    right: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    user-select: none;
+    
 }
 
 .containerList .containerItem{
@@ -45,4 +60,8 @@ body{
 .containerList span{
     font-size: 1.3rem;
     margin: 10px 0;
+}
+
+.containerItem i{
+    font-size: 12px;
 }
