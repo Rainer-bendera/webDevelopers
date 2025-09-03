@@ -65,3 +65,7 @@ body{
 .containerItem i{
     font-size: 12px;
 }
+
+.wrapper2 input{
+    margin-top: 350%;
+}
