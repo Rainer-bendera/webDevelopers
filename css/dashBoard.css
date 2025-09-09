@@ -187,3 +187,22 @@ a.sidebar-link:hover{
     padding-left: 3.8rem;
     color: #7277f2;
 }
+
+.navbar{
+    background: #fff;
+    box-shadow: 0 0 2rem 0 rgba(33, 37, 41, .1);
+}
+
+.navbar-expand .navbar-collapse{
+    min-width: 200px;
+}
+
+img.avatar{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    object-fit: cover;
+    background-position: center;
+}
+
+
