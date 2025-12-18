@@ -42,7 +42,8 @@ i.button:active{
     transform: scale(0.94) translateY(-50%);
 }
 
-i#prev{
+
+#prev{
     left: 25px;
     
 }

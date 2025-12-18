@@ -44,4 +44,4 @@ button.forEach(button => {
 wrapper.addEventListener("mouseover", () => clearInterval(intervalId));
 
 // add mousemover event listerner to wrapper element to stop
-wrapper.addEventListener("mouseleave", () => autoSlide());
+wrapper.addEventListener("mouseleave", () => autoSlide());                                                                                                                      
