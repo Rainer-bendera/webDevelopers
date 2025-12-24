@@ -53,11 +53,15 @@ body{
     justify-content: space-between;
     padding: 20px 80px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 #header img.logo{
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
 }
 
 #navbar{
@@ -94,4 +98,39 @@ body{
     position: absolute;
     bottom: -4px;
     left: 20px;
+}
+
+/* home page */
+#hero{
+    background-image: url(..//images/worker4.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#hero h4{
+    padding-bottom: 15px;
+}
+
+#hero h1{
+    color: #088178;
+}
+
+#hero button{
+    background-image: url(..//images/banner-bg.png);
+    background-color: transparent;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 13px;
+    border: 0;
+    padding: 14px 80px 14px;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
