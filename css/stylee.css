@@ -304,7 +304,7 @@ body{
     width: 100%;
     height: 40vh;
     background-size: cover;
-    background-position: center;
+    background-position: center;       
 }
 
 #banner h4{
@@ -325,4 +325,161 @@ body{
 #banner button:hover{
     background: #088178;
     color: #fff;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(..//images/avatar_5.png);
+    min-width :690px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center; 
+    padding: 30px;
+}
+
+#sm-banner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300px;
+}
+
+#sm-banner h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300px;
+}
+
+#sm-banner span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500px;
+    padding-bottom: 15px;
+}
+
+.banner-box button.normal{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    cursor: pointer;
+    transition: .2s ease;
+    background: transparent;
+    border: 1px solid #dcdcdc;
+    outline: none;
+}
+
+.banner-box:hover button.normal{
+    background: #088178;
+    color: #fff;
+    border: 1px solid #088178;
+    outline: none;
+}
+
+#sm-banner .benner-box2{
+    background-image: url(..//images/cloth2.jpg);
+}
+
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(..//images/avatar_5.png);
+    min-width :30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center; 
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#banner3 .banner-box h2{
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#banner3 .banner-box h3 {
+    color: #ec544e;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+#banner3 .banner-box2{
+    background-image: url(..//images/shoe3.jpg);
+}
+
+#banner3 .banner-box3{
+    background-image: url(..//images/cloth1.jpg);
+}
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-color: #041e42;
+    background-position: 20% 30%;
+    background-size: cover;
+    line-height: 100%;
+}
+
+#newsletter h4{
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+
+#newsletter p span{
+    color: #ffbd27;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button{
+   background-color: #088178;  
+   color: #fff;
+   white-space: nowrap;
+   border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+#footer1 img{
+    width: 140px;
+    height: 140px;
 }
