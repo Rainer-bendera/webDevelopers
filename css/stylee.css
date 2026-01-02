@@ -479,7 +479,76 @@ body{
     width: 40%;
 }
 
-#footer1 img{
+
+/* footer section */
+
+footer img{
     width: 140px;
     height: 140px;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .row img{
+    width: 70px;
+    height: 70px;
+    margin-left: 18px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+footer .payment p{
+    margin-top: 20px;
+}
+
+footer .payment img{
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    margin-top: -14%;
+}
+
+footer .logo{
+    margin-top: -30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0 ;
+}
+
+footer a{
+    /* font-size: 13px; */
+    text-decoration: none;
+    color: #222;
+    margin: 10px ;
+}
+
+
+footer .follow{
+    padding-right: 4px;
+}
+
+footer .follow i:hover{
+    color: #088178;
+}
+
+footer .copyright{
+    margin-top: -90px;
 }
