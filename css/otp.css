@@ -79,10 +79,10 @@ body{
 }
 
 .continer button.active{
-    background: #6e93f7;
+    background: #061978;
     pointer-events: auto;
 }
 
 .continer button:hover{
-    background: #061978;
+    background: #6e93f7;
 }
